@@ -1,3 +1,4 @@
+function chromeinstance() {
 $chrome = (Get-Process | Where-Object { $_.Name -ilike "*chrome*" }).Name
     if (-not $chrome) {
         Start-Process "chrome" "https://champlain.edu" 
@@ -7,3 +8,4 @@ $chrome = (Get-Process | Where-Object { $_.Name -ilike "*chrome*" }).Name
         Stop-Process -Name "chrome" 
         Write-Host "Stopping Chrome..."
         }
+}
