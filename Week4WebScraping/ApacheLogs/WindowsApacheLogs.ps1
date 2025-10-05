@@ -1,5 +1,5 @@
 ﻿# List all of the apache logs of xampp
-Get-Content C:\xampp\apache\logs\access.log -Tail 5
+Get-Content C:\xampp\apache\logs\access.log
 
 # List last 5 Apache logs
 Get-Content C:\xampp\apache\logs\access.log -Tail 5
