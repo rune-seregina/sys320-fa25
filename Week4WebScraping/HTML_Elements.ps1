@@ -9,7 +9,7 @@ $scraped_page.Links
 # Display only URL and its text
 $scraped_page.Links | select href, outerText
 
-# $h2s = $scraped_page.ParsedHtml.body.getElementsByTagName("h2") | select outerText
+$h2s = $scraped_page.ParsedHtml.body.getElementsByTagName("h2") | select outerText
 $h2s
 
 # Print innerText of every div element that has the class "div-1"
