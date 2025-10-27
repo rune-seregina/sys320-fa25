@@ -9,7 +9,8 @@ if($scheduledTasks -ne $null) {
 Write-Host "Creating new task." | Out-String
 
 $action = New-ScheduledTaskAction -Execute "powershell.exe" `
-          -argument "-File `"C:\Users\champuser\Desktop\ScheduledTasks\Main.ps1`""
+          -argument "-NoProfile -ExecutionPolicy Bypass -File `"C:\Users\champuser\Desktop\ScheduledTasks\Main.ps1`"" `
+          -WorkingDirectory "C:\Users\champuser\Desktop\ScheduledTasks"
 
 $trigger = New-ScheduledTaskTrigger -Daily -At $Time
 $principal = New-ScheduledTaskPrincipal -UserId 'champuser' -RunLevel Highest
