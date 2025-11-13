@@ -1,0 +1,8 @@
+To: rune.seregina@mymail.champlain.edu
+Subject: Logins
+
+Nov 13 13:35:47 authentication failure user=champuser
+Nov 13 13:35:50 authentication failure user=champuser
+Nov 13 13:35:54 authentication failure user=champuser
+Nov 13 13:35:57 authentication failure user=champuser
+Nov 13 13:36:04 authentication failure user=champuser
